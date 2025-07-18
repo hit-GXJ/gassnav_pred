@@ -1,0 +1,32 @@
+name: gaussnav_pred
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - cmake>=3.10
+  - numpy
+  - tqdm
+  - tensorboard
+  - prettytable
+  - scikit-fmm
+  - scikit-learn
+  - scikit-image
+  - ifcfg
+  - einops
+  - imageio
+  - pytorch=1.13.1
+  - torchvision=0.14.1
+  - pytorch-cuda=11.7
+  - pip
+  - pip:
+      - open3d==0.17.0
+      - trimesh==4.0.5
+      - plyfile==0.8.1
+      - opencv-python
+      - kmeans-pytorch
+      - pytorch-msssim
+      - torch-scatter==2.1.1+cu117 --find-links https://data.pyg.org/whl/torch-1.13.1.html
+
